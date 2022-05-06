@@ -12,9 +12,10 @@ module.exports = app => {
         if(err) throw err;
 
         let newNotes = JSON.parse(data);
-        
+
         app.get("/api/notes", function(req,res){
-            res.json(newNotes);
+            
+            res.json([newNotes]);
         })
 
         app.post("/api/notes",function(req,res){
@@ -39,7 +40,7 @@ module.exports = app => {
 
         app.get('/notes', function(req,res){
             res.sendFile(path.join(__dirname, '../public/notes.html'))
-            //what does res.sendFile do?
+            //sendFile function routes the html page (__dirname is the current directory that is executed)
             //does it join the json data with the html front end page?
         });
 
@@ -54,7 +55,6 @@ module.exports = app => {
                 return true;
                 //why do we need to to have return true
             })
-        //do we need a ".." to return to the upper layer first?
         }
     })
 }
