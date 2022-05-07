@@ -1,3 +1,4 @@
+/* Obsolete File: 
 //1. write a script that creats a server at loacl host: port 3001 and Heroku server
 //2. Deploy the front-end application on the server.
 //3. use app.post function to take in submissions by the user.
@@ -5,6 +6,7 @@
 //5. write the file to the front-end application.
 
 //Creates an Express application by requiring the modules
+
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
@@ -82,3 +84,4 @@ fs.readFile("./db/db.json","utf8", (err,data)=> {
 app.listen(PORT, function(){
     console.log('listening on PORT: ' + PORT);
 })
+*/

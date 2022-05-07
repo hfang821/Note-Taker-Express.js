@@ -1,3 +1,4 @@
+/* Obsolete routes (use server.js in the root directory):
 const fs = require('fs');
 const path = require('path');
 
@@ -58,3 +59,4 @@ module.exports = app => {
         }
     })
 }
+*/
